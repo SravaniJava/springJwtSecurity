@@ -33,9 +33,7 @@ public class SecConfig {
                       .anyRequest().authenticated())
               .csrf(csrf->csrf.disable())
               .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
-
-
-                .build();
+              .build();
     }
 
 
